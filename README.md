@@ -1,0 +1,2 @@
+# g.kalyani
+This implementation creates a new user with the given username, email, and password. The password is hashed using bcrypt with a cost factor of 10. The user is saved to the database using the save method of the User model. A JWT is generated using the sign method of the jsonwebtoken package, using a secret key to sign it. The JWT is sent to the client as a response in JSON format with a status code of 201 (Created). If an error occurs, a JSON response with a status code of 400 (Bad Request) and an error message is sent to the client.
